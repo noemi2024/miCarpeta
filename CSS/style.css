@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 @media only screen and (max-width:500px) {
     body {
         background-color: cyan;
     }
+    #formResponsive{
+        width: auto;
+    }
+
 }
  @media only screen and (min-width:501px) and (max-width:960px) {
     body {
@@ -19,6 +24,10 @@
         background-color: white
     }
  }
+
+ body{
+    background-color: darkcyan;
+ }
 a{
     text-decoration: none;
 }
@@ -26,13 +35,15 @@ a{
 header{
     display: flex;
     justify-content: space-evenly;
-    background-color: #ade8f4;
     height: auto;
 }
 
 .logo {
     text-align: center;    
+}
 
+.logo img {
+    max-width: 100%;
 }
 
 .nav{
@@ -42,12 +53,12 @@ header{
     margin-top: 3%;
 }
 
-li{
+/* li{
     list-style: none;
     border: solid black 2px;
     border-radius: 10px;
     background-color: white;
-}
+} */
 
 .option-nav{
     text-decoration: none;
@@ -95,12 +106,9 @@ li{
 }
 
 .titulo-section{
-    margin-bottom: 50px;
-    text-align: center;
-    background-color: #ade8f4;
     color: black;
-    padding: 16px;
-  
+    text-align: center;
+    margin-bottom: 150px;
 }
 
 .productos {
@@ -162,11 +170,11 @@ li{
     margin: 16px 0px
 }
 
-.tarjeta-precio{
+/* .tarjeta-precio{
     margin-left: 120px;
     margin-top: 30px;
 
-}
+} */
 .boton{
     border-radius: 16px;
     border: 2px solid blue
@@ -181,33 +189,17 @@ li{
 .tarjeta-cuerpo h3{
     font-size: 24px;
 }
-
-.container-novedades{
-    margin-bottom: 200px;
-    margin: 0 auto;  
-}
 .titulo-novedades{
     text-align: center;
-    background-color: #ade8f4;
     color: black;
     padding: 16px;
-    margin-left: 20vh;
-   margin-right: 20vh;
 
 }
-
-.container-ventas{
-    margin-bottom: 200px;
-    width: 80%; 
-    margin: 0 auto;  
-}
-.titulo-section1{
+.titulo-section{
     margin-top: 50px;
     text-align: center;
-    background-color: #ade8f4;
     color: black;
     padding: 16px;
-
 }
 
 .novedades {
@@ -267,6 +259,7 @@ h2 {
 }
 footer {
     background-color: rgb(0, 117, 172);
+    padding-top: 20px;
 }
 
 .section1 {  
@@ -323,10 +316,9 @@ iframe{
         color: cornflowerblue;
     }
 
-
-.foot-options{
-    display:inline-block;
+.foot-options {
     list-style: none;
+    width: 10%;
     border: solid black 2px;
     border-radius: 10px;
     background-color: white;
@@ -405,8 +397,7 @@ section.footer {
 .container-seccionproductos{
     margin-bottom: 200px;
     width: 80%; 
-   margin: 0 auto;    
-  
+    margin: 0 auto;    
 }
 
 .titulo-articulo{
@@ -422,6 +413,7 @@ section.footer {
    gap: 15px;
    margin-top: 20px;
    margin-left: 150px;
+   margin-bottom: 100px;
 }
 
 
@@ -499,7 +491,7 @@ section.footer {
 
 
 
-/*contacto*/
+/*conacto*/
 
 .contacto{
     margin-top: 30px;
@@ -510,21 +502,6 @@ section.footer {
     width: 20px;
     height: 20px;
 }
-.container-asesoramiento{
-    margin-bottom: 200px;
-    width: 80%; 
-   margin: 0 auto;    
-}
-
-.titulo-asesoramiento{
-   margin-bottom: 50px;
-   text-align: center;
-   background-color: #ade8f4;
-   color: black;
-   padding: 16px;
- 
-}
-
 
 /*como comprar*/
 
@@ -539,35 +516,19 @@ section.footer {
     justify-content: center;
 }
 
-.container-compra{
-    width: 80%; 
-   margin-right: 20px;  
-   margin-left: 10px;
-}
-.titulo-compra{
+.titulo-como-efectuar-una-compra{
     text-align:0;
     background-color: #ade8f4;
     color: black;
     padding: 16px;
 }
-.container-pago{
-    width: 80%; 
-   margin-right: 20px;  
-   margin-left: 10px;
-}
-.titulo-pago{
+.titulo-formas-de-pago{
     text-align:0;
     background-color: #ade8f4;
     color: black;
     padding: 16px;
 }
-
-.container-precio{
-    width: 80%; 
-   margin-right: 20px;  
-   margin-left: 10px;
-}
-.titulo-precio{
+.titulo-precios-para-revendedores{
     text-align:0;
     background-color: #ade8f4;
     color: black;
@@ -575,12 +536,8 @@ section.footer {
 }
 
 /*envios*/
-.container-envios{
-    width: 80%; 
-   margin-right: 20px;  
-   margin-left: 10px;
-}
-.titulo-envios{
+
+.titulo-envios-gratis{
     text-align:0;
     background-color: #ade8f4;
     color: black;
@@ -604,11 +561,8 @@ text-align:0;
 background-color: #ade8f4;
 color: black;
 padding: 16px;
+width: max-content;
 }
-
-
-
-
 
 .boton-wsp{
     background-color: green;
@@ -621,11 +575,7 @@ padding: 16px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-
-}
-
-.boton-wsp{
     font-size: 2rem;
     color: white;
-   
+    z-index: 99;
 }

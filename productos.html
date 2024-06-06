@@ -1,693 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="CSS/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Seccion productos</h1>
-    </header>
-    <nav>
-      <a class="inicio1" href="index.html">inicio</a>
-    </nav>
+</head>
+<body>
+    <header class="d-flex flex-column bg-dark">
+      <div class="logo mt-3">
+        <img src="imagen/logo.jpeg" alt="" />
+      </div>
 
-    <section class="container-seccionproductos">
-      <h2 class="titulo-articulo">Ventas por mayor y menor</h2>
-    <section>
-    
-      <form action="form.php" method="POST">
-        <select name="select-articulo" >
-          <option value="">Quimicos</option>
-          <option value="">Papeles Elegante</option>
-          <option value="">Papeles Luna</option>
-          <option value="">Accesorios de limpieza</option>
-        </select>
-      </form>
-    </section>
-    <div class="seccionproductos">
-      <div class="tarjeta-seccionproducto">
-        <img src="imagen/elegante.jpg" alt="" />
-        <h3 class="titulo-tarjeta">Papel higienico</h3>
-        <p class="texto-tarjeta">
-          Higienico Elegante blanco 4 x 30 mts (contiene 12 paquetes de 4)
-        </p>
-        <p class="tarjeta-precio"><strong>
-          $13872
-        </p></strong> 
+      <nav class="navbar navbar-expand-lg bg-dark mt-3">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex align-items-center justify-content-center">
+                <a class="nav-link text-light" href="index.html"><strong>Inicio</strong></a>
+                <a class="nav-link text-light" href="quienes-somos.html">Quienes somos</a>
+                <a class="nav-link text-light" href="como-comprar.html">Como comprar</a>
+                <a class="nav-link text-light" href="envio.html">Envio</a>
+                <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </div>
+        </div>
         
-        <a href="" class="comprar">Comprar</a>
+        </div>
+      </nav>
+
+    </header>
+
+      <h2 class="titulo-section">Ventas por mayor y menor</h2>
+
+      <div class="input-group mb-3 d-flex justify-content-left w-75 container">
+        <form action="form.php" method="POST">
+          <select class="form-select" name="select-articulo" id="inputGroupSelect01">
+            <option selected>Seleccione una opcion</option>
+            <option value="1">Quimicos</option>
+            <option value="2">Papeles Elegante</option>
+            <option value="3">Papeles luna</option>
+            <option value="3">Accesorios de limpieza</option>
+          </select>
+        </form>
       </div>
 
-      <div class="tarjeta-seccionproducto">
-        <img src="imagen/baldeescurre.jpeg" alt="balde"  />
-        <h3 class="titulo-tarjeta">Balde escurre mopa</h3>
-        <p class="texto-tarjeta">
-          Balde plastico oval con escurre mopa
-        </p>
-        <p class="tarjeta-precio"><strong>
-          $3900
-        </p> </strong>
-        <a href="" class="comprar">Comprar</a>
-      </div>
-
-      <div class="tarjeta-seccionproducto">
-        <img src="imagen/fibrolimp.jpeg" alt="" class="esponja" />
-        <h3 class="titulo-tarjeta">Esponja fibrolimp</h3>
-        <p class="texto-tarjeta">
-         Fibro esponja fibralimp
-        </p>
-        <p class="tarjeta-precio"><strong>
-          $188
-        </p> </strong>
-        <a href="" class="comprar">Comprar</a>
-      </div>
-
-      <div class="tarjeta-seccionproducto">
-        <img src="imagen/limpiav.jpeg" alt="" class="limpia vidrios" />
-        <h3 class="titulo-tarjeta">Limpia vidrios</h3>
-        <p class="texto-tarjeta">
-          Limpiavidrios en sus presentaciones de 2 y 5 lts.
-        <p class="tarjeta-precio"><strong>
-          $3490
-        </p> </strong>
-        <a href="" class="comprar">Comprar</a>
-      </div>
-
-      <div class="tarjeta-seccionproducto">
-        <img src="imagen/200.jpeg" alt="" class="rolloelegante" />
-        <h3 class="titulo-tarjeta">Rollo de cocina</h3>
-        <p class="texto-tarjeta">
-         Rollo de cocina de 200 paños( contiene 12 rollos)
-        </p>
-        <p class="tarjeta-precio"><strong>
-          $19320
-        </p> </strong>
-        <a href="" class="comprar">Comprar</a>
-      </div>
-
-      <div class="tarjeta-seccionproducto">
-        <img src="imagen/rollop.jpeg" alt="" class="papel luna" />
-        <h3 class="titulo-tarjeta">Rollo de cocina Luna</h3>
-        <p class="texto-tarjeta">
-          Rollo de cocina Luna de 100 paños (contiene 12 rollos)
-        </p>
-        <p class="tarjeta-precio"><strong>
-          $9170
-        </p> </strong>
-        <a href="" class="comprar">Comprar</a>
-      </div>
-   
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/guante.jpeg" alt="" />
-      <h3 class="titulo-tarjeta">Guantes amarillos de latex</h3>
-      <p class="texto-tarjeta">
-       Guantes amarillos de latex
-      </p>
-      <p class="tarjeta-precio"><strong>
-        $1605
-      </p></strong> 
+      <a class="boton-wsp" href=""><i class="bi bi-whatsapp w-50"></i></a>
+  <section class="container-productos mb-5">
+    <div class="productos">
       
-      <a href="" class="comprar">Comprar</a>
-    </div>
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/elegante.jpg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Papel higienico</h5>
+          <p class="card-text">Higienico Elegante blanco 4 x 30 mts (contiene 12 paquetes de 4)</p>
+            <p class="text-left p-2"><strong> $1400 </p></strong> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
 
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/trapoblanco.jpeg" alt="trapo"  />
-      <h3 class="titulo-tarjeta">Trapo de piso blanco</h3>
-      <p class="texto-tarjeta">
-       Trapo de piso blanco Mister Trapo
-      </p>
-      <p class="tarjeta-precio"><strong>
-        $775
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div>
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/baldeescurre.jpeg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Balde escurre mopa</h5>
+          <p class="card-text">Balde plastico oval con escurre mopa</p>
+            <p class="text-left p-2"><strong> $4000 </p></strong> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
 
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/balde.jpeg" alt="" class="balde" />
-      <h3 class="titulo-tarjeta">Balde plastico de 10 litros</h3>
-      <p class="texto-tarjeta">
-       Balde plastico de 10 litros
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/fibrolimp.jpeg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Esponja fibrolimp</h5>
+          <p class="card-text">Fibro esponja fibralimp</p>
+            <p class="text-left p-2"><strong> $2000 </p></strong> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
 
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/100p.jpeg" alt="" class="100paños" />
-      <h3 class="titulo-tarjeta">Rollo de cocina de 100 paños</h3>
-      <p class="texto-tarjeta">
-        Rollo de cocina Elegante de 100 hojas Premium(contiene 5 paquetes de 3)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
+     
 
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/40p.jpeg" alt="" class="40paños" />
-      <h3 class="titulo-tarjeta">Rollo de cocina de 40 paños</h3>
-      <p class="texto-tarjeta">
-        Rollo de cocina Dicha de 40 paños (contiene 12 paquetes de 3)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/50m.jpeg" alt="" class="50m" />
-      <h3 class="titulo-tarjeta">Higienico de 24x50 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico Elegante de 24 x 50 mts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/60p.jpeg" alt="" class="60 paños" />
-      <h3 class="titulo-tarjeta">Rollo de cocina de 60 paños</h3>
-      <p class="texto-tarjeta">
-        Rollo de cocina Elegante de 60 paños (contiene 8 pauqtes de 3)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/80.jpeg" alt="" class="80mts" />
-      <h3 class="titulo-tarjeta">Higienico de 80 mts</h3>
-      <p class="texto-tarjeta">
-        HHigienico Elegante blanco max (contiene 10 apquetes de 4)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/amercicana.jpeg" alt="" class="americana" />
-      <h3 class="titulo-tarjeta">Rejilla Americana</h3>
-      <p class="texto-tarjeta">
-        Rejilla Americana
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/trapogris.jpeg" alt="" class="griso" />
-      <h3 class="titulo-tarjeta">Trapo de piso gris</h3>
-      <p class="texto-tarjeta">
-        Trapo de piso gris Mister Trapo
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/cabo.jpeg" alt="" class="cabo" />
-      <h3 class="titulo-tarjeta">Cabo de madera</h3>
-      <p class="texto-tarjeta">
-        Cabo de madera de 1,20 mts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/deposito.jpeg" alt="" class="deposito" />
-      <h3 class="titulo-tarjeta">Escobilla de baño con deposito</h3>
-      <p class="texto-tarjeta">
-        Escobilla de baño con deposito
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/doble.jpeg" alt="" class="doble" />
-      <h3 class="titulo-tarjeta">Rejilla doble mediana de auto</h3>
-      <p class="texto-tarjeta">
-        Rejilla doble mediana de auto
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/globo.jpeg" alt="" class="globo" />
-      <h3 class="titulo-tarjeta">Cepillo globo de techo</h3>
-      <p class="texto-tarjeta">
-       Cepillo globo de techo
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/lavandina.jpeg" alt="" class="lavandina" />
-      <h3 class="titulo-tarjeta">Lavandina</h3>
-      <p class="texto-tarjeta">
-       Lavandina  concentrada en sus presentaciones de 2 y 5 lts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/lavavajilla.jpeg" alt="" class="lavavajilla" />
-      <h3 class="titulo-tarjeta">Rejilla lava vajilla</h3>
-      <p class="texto-tarjeta">
-        Rejila Lava vajilla
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/limpiav.jpeg" alt="" class="limpia" />
-      <h3 class="titulo-tarjeta">Limpiavidrios</h3>
-      <p class="texto-tarjeta">
-        Limpiavidrios en sus presentaciones de 2 y 5 lts
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/suavizante.jpeg" alt="" class="suavizante" />
-      <h3 class="titulo-tarjeta">Suavizante</h3>
-      <p class="texto-tarjeta">
-       Suavizante para ropa en sus fragancias Coniglio/vivere en sus presentaciones de 2 y 5 lts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/servilletera.jpeg" alt="" class="servilleta" />
-      <h3 class="titulo-tarjeta">Serviletas por 1000 unidades</h3>
-      <p class="texto-tarjeta">
-       Servilleta por 100 unidades
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/toalla.jpeg" alt="" class="toalla" />
-      <h3 class="titulo-tarjeta">Toallas intercaladas por 2500 unidades</h3>
-      <p class="texto-tarjeta">
-       Toallas intercaladas Premuin 4 panales, en su presentacion por 2500 unidades
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/secador.jpeg" alt="" class="secador" />
-      <h3 class="titulo-tarjeta">Secador doble</h3>
-      <p class="texto-tarjeta">
-        Secador doble goma de 40 cm
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/120.jpeg" alt="" class="120" />
-      <h3 class="titulo-tarjeta">Higienico de 120 mts</h3>
-      <p class="texto-tarjeta">
-       Higienico Elegante blanco (contiene 12  rollos individuales de 120 mts)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/6.jpeg"alt="" class="6bolson" />
-      <h3 class="titulo-tarjeta">Higienico 6x30 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico blanco de 6 por 30 mts (contiene 12 paquetes de 30 mts)
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/acanalada.jpeg" alt="" class="acanalada" />
-      <h3 class="titulo-tarjeta">Esponaja acanalada</h3>
-      <p class="texto-tarjeta">
-        Fibro Esponja grande acanalada
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/acero.jpeg" alt="" class="acero" />
-      <h3 class="titulo-tarjeta">Esponja acero</h3>
-      <p class="texto-tarjeta">
-        Esponja dorada de 15 gr
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/bbina.jpeg" alt="" class="1004" />
-      <h3 class="titulo-tarjeta">Bobinas de limpieza</h3>
-      <p class="texto-tarjeta">
-        Bobinas para limpieza, doble hoja Premiun de 19 cm x 400 mts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/bob2.jpeg" alt="" class="1026" />
-      <h3 class="titulo-tarjeta">Toallas en bobina</h3>
-      <p class="texto-tarjeta">
-       Toallas en bobinas Premium 4 x 200 mts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/doblecara.jpeg" alt="" class="esponaja" />
-      <h3 class="titulo-tarjeta">Esponja doble cara</h3>
-      <p class="texto-tarjeta">
-        Esponja doble cara
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/detergente.jpeg" alt="" class="Detergente" />
-      <h3 class="titulo-tarjeta">Detergente biodegradable</h3>
-      <p class="texto-tarjeta">
-        Detergente biodegradable en sus presentacion por 2 y 5 lts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/escoba.jpeg" alt="" class="escoba" />
-      <h3 class="titulo-tarjeta">Escoba Nectar</h3>
-      <p class="texto-tarjeta">
-        Escoba Nectar
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/escobillion1.jpeg" alt="" class="escobillon" />
-      <h3 class="titulo-tarjeta">Escobillon laqueado Lanin</h3>
-      <p class="texto-tarjeta">
-        Escobillon lauqeado Lanin
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/escobillon2.jpeg" alt="" class="escobi" />
-      <h3 class="titulo-tarjeta">Escobillon laqueado Lakar</h3>
-      <p class="texto-tarjeta">
-       Escobillon lauqeado Lakar
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/pala.jpeg" alt="" class="pala" />
-      <h3 class="titulo-tarjeta">Pala con cabo rebatible y goma</h3>
-      <p class="texto-tarjeta">
-        Pala con cabo rebatible y goma
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/palamano.jpeg" alt="" class="mano" />
-      <h3 class="titulo-tarjeta">Pala super de mano</h3>
-      <p class="texto-tarjeta">
-        Pala super de mano
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/paño.jpeg" alt="" class="paño" />
-      <h3 class="titulo-tarjeta">Paño de cocina</h3>
-      <p class="texto-tarjeta">
-        Paño de cocina
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/pañuelo.jpeg" alt="" class="pañuelo" />
-      <h3 class="titulo-tarjeta">Pañuelo</h3>
-      <p class="texto-tarjeta">
-        Pañuelo Elegante doble hoja Premium x 6 unidades
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/rejillaeco.jpeg" alt="" class="eco" />
-      <h3 class="titulo-tarjeta">Rejilla pabilo economica</h3>
-      <p class="texto-tarjeta">
-        Rejilla Pabilo Economica
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/secadonegro.jpeg" alt="" class="secador" />
-      <h3 class="titulo-tarjeta">Secador negro</h3>
-      <p class="texto-tarjeta">
-        Secador negro 40 cm
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/120paq.jpeg" alt="" class="120p" />
-      <h3 class="titulo-tarjeta">Higienico de 6x4 de 120 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico Elegante blanco 6 x 30 mts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/300m (2).jpeg" alt="" class="300" />
-      <h3 class="titulo-tarjeta">Higienico de 300 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico de 8 x 300 mts
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/eco30.jpeg" alt="" class="30pre" />
-      <h3 class="titulo-tarjeta">Higienico Luna Premium de 30 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico Luna Eco de 30 mts ( contiene 30 rollos de 30 mts)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/eco80.jpeg" alt="" class="80pre" />
-      <h3 class="titulo-tarjeta">Higienico Luna Premium de 80 mts</h3>
-      <p class="texto-tarjeta">
-        LHigienico Luna Eco de 80 mts ( contiene 30 rollos de 80 mts)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/triple.jpeg" alt="" class="triple" />
-      <h3 class="titulo-tarjeta">Higienico triple hoja</h3>
-      <p class="texto-tarjeta">
-        Higienico triple hoja Premiun de 30 mts ( contiene 6 paquetes de 4)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/doble (2).jpeg" alt="" class="80eco" />
-      <h3 class="titulo-tarjeta">Higienico doble hojas</h3>
-      <p class="texto-tarjeta">
-        LHigienico extra blanco doble hoja de 30 mts (contiene  10 paquetes de 4)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/recarga.jpeg" alt="" class="recarga" />
-      <h3 class="titulo-tarjeta">Recarga Saphirus</h3>
-      <p class="texto-tarjeta">
-      Recarga de atomizador Saphirus por 280 cc
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/perfume.jpeg" alt="" class="perfume" />
-      <h3 class="titulo-tarjeta">Perfume de tela Saphirus</h3>
-      <p class="texto-tarjeta">
-       Perfume de tela Saphirus por 250cc
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/leco30.jpeg" alt="" class="eco30" />
-      <h3 class="titulo-tarjeta">Higienico Luna Eco de 30 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico Luna Eco de 30 mts (contiene 30 rollos de 30 mts)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/leco80.jpeg" alt="" class="eco80" />
-      <h3 class="titulo-tarjeta">Higienico Luna Eco de 80 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico Luna Eco de 80 mts (contiene 30 rollos de 80 mts)
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-    <div class="tarjeta-seccionproducto">
-      <img src="imagen/30m2.jpeg" alt="" class="eco80" />
-      <h3 class="titulo-tarjeta">Higienico Luna Eco de 80 mts</h3>
-      <p class="texto-tarjeta">
-        Higienico 24x30 mts aloe vera Premiun
-      </p>
-      <p class="tarjeta-precio"><strong>
-        1875
-      </p> </strong>
-      <a href="" class="comprar">Comprar</a>
-    </div> 
-
-
-  </div>
-</section>
   
 
-  </body>
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/limpiav.jpeg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Limpia vidrios</h5>
+          <p class="card-text">Limpiavidrios en sus presentaciones de 2 y 5 lts.</p>
+          <p class="text-left p-2"><strong> $3490 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/200.jpeg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Rollo de cocina</h5>
+          <p class="card-text">Rollo de cocina de 200 paños (contiene 12 rollos)</p>
+          <p class="text-left p-2"><strong> $19320 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/rollop.jpeg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Rollo de cocina Luna</h5>
+          <p class="card-text">Rollo de cocina Luna de 100 paños (contiene 12 rollos)</p>
+          <p class="text-left p-2"><strong> $9170 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/guante.jpeg" class="card-img-top mx-100 h-50" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Guantes amarillos de latex</h5>
+          <p class="card-text">Guantes amarillos de latex</p>
+          <p class="text-left p-2"><strong> $1605 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/trapoblanco.jpeg" class="card-img-top mx-100 h-50" alt="trapo">
+        <div class="card-body">
+          <h5 class="card-title">Trapo de piso blanco</h5>
+          <p class="card-text">Trapo de piso blanco Mister Trapo</p>
+          <p class="text-left p-2"><strong> $775 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/balde.jpeg" class="card-img-top mx-100 h-50" alt="balde">
+        <div class="card-body">
+          <h5 class="card-title">Balde plástico de 10 litros</h5>
+          <p class="card-text">Balde plástico de 10 litros</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/100p.jpeg" class="card-img-top mx-100 h-50" alt="100paños">
+        <div class="card-body">
+          <h5 class="card-title">Rollo de cocina de 100 paños</h5>
+          <p class="card-text">Rollo de cocina Elegante de 100 hojas Premium (contiene 5 paquetes de 3)</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/40p.jpeg" class="card-img-top mx-100 h-50" alt="40paños">
+        <div class="card-body">
+          <h5 class="card-title">Rollo de cocina de 40 paños</h5>
+          <p class="card-text">Rollo de cocina Dicha de 40 paños (contiene 12 paquetes de 3)</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/50m.jpeg" class="card-img-top mx-100 h-50" alt="50m">
+        <div class="card-body">
+          <h5 class="card-title">Higiénico de 24x50 mts</h5>
+          <p class="card-text">Higiénico Elegante de 24 x 50 mts</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/60p.jpeg" class="card-img-top mx-100 h-50" alt="60paños">
+        <div class="card-body">
+          <h5 class="card-title">Rollo de cocina de 60 paños</h5>
+          <p class="card-text">Rollo de cocina Elegante de 60 paños (contiene 8 paquetes de 3)</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/80.jpeg" class="card-img-top mx-100 h-50" alt="80mts">
+        <div class="card-body">
+          <h5 class="card-title">Higiénico de 80 mts</h5>
+          <p class="card-text">Higiénico Elegante blanco max (contiene 10 paquetes de 4)</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/amercicana.jpeg" class="card-img-top mx-100 h-50" alt="americana">
+        <div class="card-body">
+          <h5 class="card-title">Rejilla Americana</h5>
+          <p class="card-text">Rejilla Americana</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/trapogris.jpeg" class="card-img-top mx-100 h-50" alt="griso">
+        <div class="card-body">
+          <h5 class="card-title">Trapo de piso gris</h5>
+          <p class="card-text">Trapo de piso gris Mister Trapo</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/cabo.jpeg" class="card-img-top mx-100 h-50" alt="cabo">
+        <div class="card-body">
+          <h5 class="card-title">Cabo de madera</h5>
+          <p class="card-text">Cabo de madera de 1,20 mts</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/deposito.jpeg" class="card-img-top mx-100 h-50" alt="deposito">
+        <div class="card-body">
+          <h5 class="card-title">Escobilla de baño con depósito</h5>
+          <p class="card-text">Escobilla de baño con depósito</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="imagen/lamop.jpeg" class="card-img-top mx-100 h-50" alt="lamop">
+        <div class="card-body">
+          <h5 class="card-title">Lamop con cabo de madera</h5>
+          <p class="card-text">Lamop con cabo de madera de 1,20 mts</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="imagen/fragancia.jpeg" class="card-img-top mx-100 h-50" alt="fragancia">
+        <div class="card-body">
+          <h5 class="card-title">Fragancia Fresh</h5>
+          <p class="card-text">Fragancia Fresh de 2 lts</p>
+          <p class="text-left p-2"><strong> $1875 </strong></p> 
+          <a href="#" class="btn btn-outline-dark">Comprar</a>
+        </div>
+      </div> -->
+      
+  </div>
+</section>
+
+  <footer>
+    <section class="footer">
+    <h2 class="text-center">Navegacion</h2>
+
+    <nav class="navbar navbar-expand-lg mt-3">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse flex-column" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex align-items-center d-flex flex-column">
+              <a class="nav-link text-light" href="productos.html">Productos</a>
+              <a class="nav-link text-light" href="quienes-somos.html">Quienes somos</a>
+              <a class="nav-link text-light" href="envio.html">Envio</a>
+              <a class="nav-link text-light" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      
+      </div>
+    </nav>
+
+
+    <h2>Medios de pago</h2>
+    <div id="#imag">
+      <img src="imagen/visa3.jpg" alt="imag" />
+      <img src="imagen/mp1.jpg" alt="" />
+      <img src="imagen/master.jpg" alt="" />
+      <h2>Contacto</h2>
+      <img src="imagen/ubicacion.png" alt="">
+      <h5>Dr Mariano Moreno 1111</h5>
+      <h5>Vicente Lopez - Buenos Aires</h5>
+    </div>
+  </footer>
+
+</body>
 </html>

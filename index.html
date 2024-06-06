@@ -3,163 +3,197 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>D&N HIGENE</title>
     <link rel="stylesheet" href="CSS/style.css" />
-    
+    <title>D&N HIGENE</title>
   </head>
   <body>
 
    
-    <header>
-      <div class="logo">
+    <header class="d-flex flex-column bg-dark">
+      <div class="logo mt-3">
         <img src="imagen/logo.jpeg" alt="" />
       </div>
 
-      <nav>
-        <ul class="nav">
-          <li>
-            <a class="option-nav" href="quienes-somos.html">Quienes somos </a> </li>
-          <li><a class="option-nav" href="productos.html">Productos</a></li>
-          <li><a class="option-nav" href="contacto.html">Contacto</a></li>
-          <li><a class="option-nav" href="como-compra.html">Como comprar</a></li>
-          <li><a class="option-nav" href="envio.html">Envio</a></li>
-          
-
-        </ul>
-      </nav>
-    </header>
-
-    <div id="carrousel" class="carrousel ">
-          <img src="./imagen/eleg1.jpeg" class="d-block w-100" alt="...">
-          <img src="./imagen/art1.jpeg" class="d-block w-100" alt="...">
-          <img src="./imagen/quim1.jpeg" class="d-block w-100" alt="...">
-          <img src="./imagen/luna1.jpeg" class="d-block w-100" alt="...">
-   </div>
+      <nav class="navbar navbar-expand-lg bg-dark mt-3">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex align-items-center justify-content-center">
+                <a class="nav-link text-light" href="productos.html">Productos</a>
+                <a class="nav-link text-light" href="como-comprar.html">Como comprar</a>
+                <a class="nav-link text-light" href="quienes-somos.html">Quienes somos</a>
+                <a class="nav-link text-light" href="envio.html">Envio</a>
+                <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </div>
+        </div>
         
+        </div>
+      </nav>
+
+    </header>
+    
+  <div id="carouselExampleIndicators" class="carousel slide mt-5 container" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagen/eleg1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagen/art1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagen/quim1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagen/luna1.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
     
     <section class="container-productos">
       <h1 class="titulo-section">Ventas por mayor y menor</h1>
 
-      <form action="form.php" method="POST">
-        <select class="select-precio">
-          <option value="">Destacado</option>
-          <option value="">Precio:menor a mayor</option>
-          <option value="">Precio:mayor a menor</option>
-          <option value="">Mas vendido</option>
-        </select>
-      </form>
+      <div class="input-group mb-3" id="formResponsive">
+        <form action="form.php" method="POST">
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Seleccione una opcion</option>
+            <option value="1">Destacado</option>
+            <option value="2">Menor a mayor precio</option>
+            <option value="3">Mayor a menor precio</option>
+            <option value="3">Mas vendido</option>
+          </select>
+        </form>
+      </div>
 
       <div class="productos">
-        <div class="tarjeta-producto">
-          <img src="imagen/elegante.jpg" alt="" />
-          <h3 class="titulo-tarjeta">Papel higienico</h3>
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            suscipit ad
-          </p>
-          <p class="tarjeta-precio"><strong>
-            $13872
-          </p></strong> 
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/elegante.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Papel higienico</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $13872 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/baldeescurre.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Balde escurre mapa</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $3900 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/fibroplimp.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Esponja fibrolimp</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $1800 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/limpiav.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Limpia vidrio</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $3500 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/200.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Rollo de cocina</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $20000 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
           
-          <a href="" class="comprar">Comprar</a>
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/rollop.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Rollo de cocina Luna</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $9170 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
         </div>
 
-        <div class="tarjeta-producto">
-          <img src="imagen/baldeescurre.jpeg" alt="balde"  />
-          <h3 class="titulo-tarjeta">Balde escurre mopa</h3>
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            suscipit ad
-          </p>
-          <p class="tarjeta-precio"><strong>
-            $3900
-          </p> </strong>
-          <a href="" class="comprar">Comprar</a>
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/rollop.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Rollo de cocina Luna</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $9170 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
         </div>
 
-        <div class="tarjeta-producto">
-          <img src="imagen/fibroplimp.jpeg" alt="" class="esponja" />
-          <h3 class="titulo-tarjeta">Esponja fibrolimp</h3>
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            suscipit ad
-          </p>
-          <p class="tarjeta-precio"><strong>
-            $188
-          </p> </strong>
-          <a href="" class="comprar">Comprar</a>
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/rollop.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Rollo de cocina Luna</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $9170 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
         </div>
-
-        <div class="tarjeta-producto">
-          <img src="imagen/limpiav.jpeg" alt="" class="limpia vidrios" />
-          <h3 class="titulo-tarjeta">Limpia vidrios</h3>
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            suscipit ad
-          </p>
-          <p class="tarjeta-precio"><strong>
-            $3490
-          </p> </strong>
-          <a href="" class="comprar">Comprar</a>
-        </div>
-
-        <div class="tarjeta-producto">
-          <img src="imagen/200.jpeg" alt="" class="rolloelegante" />
-          <h3 class="titulo-tarjeta">Rollo de cocina</h3>
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            suscipit ad
-          </p>
-          <p class="tarjeta-precio"><strong>
-            $19320
-          </p> </strong>
-          <a href="" class="comprar">Comprar</a>
-        </div>
-
-        <div class="tarjeta-producto">
-          <img src="imagen/rollop.jpeg" alt="" class="papel luna" />
-          <h3 class="titulo-tarjeta">Rollo de cocina Luna</h3>
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            suscipit ad
-          </p>
-          <p class="tarjeta-precio"><strong>
-            $9170
-          </p> </strong>
-          <a href="" class="comprar">Comprar</a>
-        </div>
-      </div>
+       
     </section>
 
-    <section class="container-ventas">
-      <h1 class="titulo-section1">Solicitar Catalogo Mayorista</h1>
+    <section class="section1">
+      <h1 class="text-dark text-center p-5">Solicitar Catalogo Mayorista</h1>
 
-      <form action="" class="contacto">
-        <div>
-          <label for="Nombre"></label>
+      <form action="" class="w-50 container-fluid">
+        <div class="d-flex flex-column justify-content-center mb-3">
+          <label for="Nombre">Nombre:</label>
           <input type="text" placeholder="Nombre" />
         </div>
 
-        <div>
-          <label for="telefono"></label>
+        <div class="d-flex flex-column justify-content-center mb-3">
+          <label for="telefono">Telefono:</label>
           <input type="number" placeholder="Telefono" />
         </div>
 
-        <div>
-          <label for="email"></label>
+        <div class="d-flex flex-column justify-content-center mb-3">
+          <label for="email">Correo:</label>
           <input type="text" placeholder="correo@ejemplo.com" />
         </div>
 
-        <div>
-          <h2>Consulta</h2>
-          <textarea name="Consulta" cols="30" rows="10"></textarea>
+        <div class="d-flex flex-column justify-content-center mb-3">
+          <label for="consulta">Consulta</label>
+          <textarea name="Consulta" cols="100" id="consulta" rows="10" class="w-100"></textarea>
         </div>
 
-        <div>
-          <input type="submit" value="Enviar" />
+        <div class="d-flex justify-content-center">
+          <input type="submit" class="btn btn-secondary btn-lg  w-50" value="Enviar" />
         </div>
       </form>
+
     </section>
 
     <div class="connt-iframe">
@@ -171,68 +205,73 @@
       ></iframe>
     </div>
 
-    <section class="container-novedades">
+    <section class="container-productos mb-5">
       <h2 class="titulo-novedades">Novedades</h2>
-        
-        <div class="novedades">
-          <div class="tarjeta-novedades">
-            <img src="imagen/guante.jpeg" alt="" />
-            <h3 class="titulo-tarjeta">Guantes amarillos de latex</h3>
-            <p class="texto-tarjeta">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              suscipit ad
-            </p>
-            <p class="tarjeta-precio"><strong>
-              $1605
-            </p></strong> 
-            
-            <a href="" class="comprar">Comprar</a>
-          </div>
-  
-          <div class="tarjeta-novedades">
-            <img src="imagen/trapoblanco.jpeg" alt="trapo"  />
-            <h3 class="titulo-tarjeta">Trapo de piso blanco</h3>
-            <p class="texto-tarjeta">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              suscipit ad
-            </p>
-            <p class="tarjeta-precio"><strong>
-              $775
-            </p> </strong>
-            <a href="" class="comprar">Comprar</a>
-          </div>
-  
-          <div class="tarjeta-novedades">
-            <img src="imagen/balde.jpeg" alt="" class="balde" />
-            <h3 class="titulo-tarjeta">Balde plastico de 10 litros</h3>
-            <p class="texto-tarjeta">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              suscipit ad
-            </p>
-            <p class="tarjeta-precio"><strong>
-              1875
-            </p> </strong>
-            <a href="" class="comprar">Comprar</a>
-          </div> 
+      <div class="productos">
 
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/guante.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Guantes amarillos de latex</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $1900 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/trapoblanco.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Trapo de psio blanco</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $800 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/balde.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Balde de 10 litros</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $1900 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="imagen/balde.jpeg" class="card-img-top mx-100 h-50" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Balde de 10 litros</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit ad</p>
+              <p class="text-left p-2"><strong> $1900 </p></strong> 
+            <a href="#" class="btn btn-outline-dark">Comprar</a>
+          </div>
+        </div>
+
+    </div>
     </section>
-    <div class="boton wsp">
-      <i class="bi bi-whatsapp"></i>
-</div>
+    
+<a class="boton-wsp" href=""><i class="bi bi-whatsapp w-50"></i></a>
 
     <footer>
       <section class="footer">
-      <h2>Navegacion</h2>
-        <li class="foot-options">
-          <a class="foot-a" href="quienes-somos.html">Quienes somos</a>
-        </li>
-        <li class="foot-options">
-          <a class="foot-a" href="productos.html">Productos</a>
-        </li>
-        <li class="foot-options">
-          <a class="foot-a" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
+      <h2 class="text-center">Navegacion</h2>
+   
+      <nav class="navbar navbar-expand-lg mt-3">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse flex-column" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex align-items-center d-flex flex-column">
+                <a class="nav-link text-light" href="productos.html">Productos</a>
+                <a class="nav-link text-light" href="quienes-somos.html">Quienes somos</a>
+                <a class="nav-link text-light" href="envio.html">Envio</a>
+                <a class="nav-link text-light" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        
+        </div>
+      </nav>
+
 
       <h2>Medios de pago</h2>
       <div id="#imag">
@@ -244,24 +283,8 @@
         <h5>Dr Mariano Moreno 1111</h5>
         <h5>Vicente Lopez - Buenos Aires</h5>
       </div>
-      
-      <div id="redes">
-        <ul class="nav-foot">
-          <li class="foot-options">
-            <img src="imagen/mail.png" alt="">
-            <p>dynhigiene@outlook.com</p>
-            </li>
-          <li class="foot-options">
-          <img src="imagen/whatsapp1.png" alt="">
-          <h5>Whatsapp 1158279292</h5>
-          </li>
-         
-           
-          </li>
-        </ul>
-      </div>
     </footer>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
 </html>
