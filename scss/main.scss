@@ -1,0 +1,14 @@
+nav {
+    background-color: aqua;
+    display: flex;
+    ul {
+        background-color: aquamarine;
+    }
+}
+.nav-link {
+    color: red;
+    /*& para repetir el padre*/
+    &:hover {
+        background-color: azure;
+    }
+}
